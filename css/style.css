@@ -7,6 +7,34 @@
     box-sizing: border-box;
 }
 
+body{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-areas: "nav header header header header header header header header header header header header"
+                         "nav . . . . . . . . . . . .";
+}
+
+.header{
+    grid-area: header;
+    width: 1170px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return {
+    margin: 21px 0 21px 30px;
+}
+.container_options {
+    display: flex;
+    margin: 20px 51px 20px 0;
+    gap: 27px;
+}
+.search {
+}
+.noti {
+}
+
 .main_container {
     display: flex;
     flex-direction: row;
