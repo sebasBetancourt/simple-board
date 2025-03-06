@@ -14,6 +14,10 @@ body{
                          "nav main main main main main main main main main main main main";
 }
 
+
+
+
+/*-----------------------------HEADER------------------------------------*/
 .header{
     grid-area: header;
     width: 1170px;
@@ -35,12 +39,16 @@ body{
 .noti {
 }
 
+
+/*-----------------------------NAVEGATION------------------------------------*/
+
 .main_container {
+    
     display: flex;
     flex-direction: row;
 }
 
-.side_1 {
+nav {
     width: 290px;
     height: 900px;
     background-color: var(--color-10);
@@ -49,30 +57,74 @@ body{
     align-items: center;    
 }
 
-.container_profile {
+.container_logo {
     width: 219.5px;
-    height: 851px;
+    height: 24px;
+    margin-top: 18px;
+
 }
 
 .container_logo a {
-    width: 219.5px;;
-    height: 24px;
     display: flex; 
-    flex-direction: row;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding-top: 18px;
     text-decoration: none;
-    padding-bottom: 54px;
+    
 }
-
-.brand_name {
+.container_logo a h1{
     font-family: "Montserrat-Bold";
     font-size: 20px;
     color: var(--color-1);
 }
 
+
+.container_user {
+    width: 130px;
+    height: 196px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.container_user img{
+    width: 130px;
+    height: 214px;
+    border-radius: 100%;
+}
+.container_user h2{
+    font-family: "Montserrat-Bold";
+    font-size: 17px;
+    color: var(--color-1);
+}
+.container_user label{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.container_menu {
+    height: auto;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu_nav {
+    background: green;
+}
+.log_out {
+}
+
+
+
+
+
+
+/*-----------------------------MAIN_CONTENT-----------------------------------*/
+
+
 main{
     grid-area: main;
 }
+

@@ -1,9 +1,5 @@
 
 
-
-
-
-
 function changeContent(seccion) {
     let main = document.getElementById("content");
 
@@ -15,8 +11,8 @@ function changeContent(seccion) {
         main.innerHTML = "<h2>Página de Students</h2>";
     }else if (seccion === "Payment") {
         main.innerHTML = "<h2>Página de Payment</h2>";
-    }else if (seccion === "Report_Menu") {
-        main.innerHTML = "<h2>Página de Report_Menu</h2>";
+    }else if (seccion === "Report_menu_nav") {
+        main.innerHTML = "<h2>Página de Report_menu_nav</h2>";
     }else if (seccion === "Settings") {
         main.innerHTML = "<h2>Página de Settings</h2>";
     }else if (seccion === "Logout") {
