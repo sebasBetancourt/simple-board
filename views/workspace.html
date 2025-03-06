@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="../js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -62,7 +63,7 @@
                                 <img src="/storage/img/Home_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Home</h2>
+                                <button onclick="changeContent('Home')">Home</button>
                             </div>
                         </div>
                         <div class="menu">
@@ -70,7 +71,7 @@
                                 <img src="/storage/img/Course_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Course</h2>
+                                <button onclick="changeContent('Course')">Course</button>
                             </div>
                         </div>
                         <div class="menu">
@@ -78,7 +79,7 @@
                                 <img src="/storage/img/Students_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Students</h2>
+                                <button onclick="changeContent('Students')">Students</button>
                             </div>
                         </div>
                         <div class="menu">
@@ -86,7 +87,7 @@
                                 <img src="/storage/img/Payment_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Payment</h2>
+                                <button onclick="changeContent('Payment')">Payment</button>
                             </div>
                         </div>
                         <div class="menu">
@@ -94,7 +95,7 @@
                                 <img src="/storage/img/Report_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Report_Menu</h2>
+                                <button onclick="changeContent('Report_Menu')">Report_Menu</button>
                             </div>
                         </div>
                         <div class="menu">
@@ -102,7 +103,7 @@
                                 <img src="/storage/img/Settings_Menu.png" alt="">
                             </div>
                             <div class="text">
-                                <h2>Settings</h2>
+                                <button onclick="changeContent('Settings')">Settings</button>
                             </div>
                         </div>
                 </section>
@@ -112,7 +113,7 @@
                             <img src="/storage/img/Sign_Out_Menu.png" alt="">
                         </div>
                         <div class="text_2">
-                            <h2>Logout</h2>
+                            <button onclick="changeContent('Logout')">Logout</button>
                         </div>
                     </div>
                 </section>
@@ -120,5 +121,9 @@
             
         </section>    
     </nav>
+
+    <main id="content">
+
+    </main>
 </body>
 </html>

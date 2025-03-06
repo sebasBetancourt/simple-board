@@ -11,7 +11,7 @@ body{
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-areas: "nav header header header header header header header header header header header header"
-                         "nav . . . . . . . . . . . .";
+                         "nav main main main main main main main main main main main main";
 }
 
 .header{
@@ -71,4 +71,8 @@ body{
     font-family: "Montserrat-Bold";
     font-size: 20px;
     color: var(--color-1);
+}
+
+main{
+    grid-area: main;
 }
