@@ -2,7 +2,36 @@ export const changeContent = (seccion) => {
     let main = document.getElementById("content");
 
     if (seccion === "Home") {
-        main.innerHTML = "<h2>Página de Home</h2>";
+        main.innerHTML = `
+            <div id="students" class="div__container">
+                <div>
+                    <img src="#">
+                    <span>Students</span>
+                </div>
+                <strong>243</strong>
+            </div>
+            <div id="course" class="div__container">
+                <div>
+                    <img src="#">
+                    <span>Course</span>
+                </div>
+                <strong>13</strong>
+            </div>
+            <div id="payment" class="div__container">
+                <div>
+                    <img src="#">
+                    <span>Payments</span>
+                </div>
+                <strong data-format="$">556,000</strong>
+            </div>
+            <div id="user" class="div__container">
+                <div>
+                    <img src="#">
+                    <span>Users</span>
+                </div>
+                <strong>3</strong>
+            </div>
+        `;
     } else if (seccion === "Course") {
         main.innerHTML = "<h2>Página de Course</h2>";
     } else if (seccion === "Students") {
