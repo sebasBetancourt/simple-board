@@ -142,6 +142,11 @@ button{
     color: var(--color-3);
     border-radius: 4px;
     border: none;
+    
+}
+
+button :hover{
+    background-color: var(--color-15);
 }
 
 .forgot{
