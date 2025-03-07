@@ -39,32 +39,32 @@
             <label>Admin</label>
         </section>
         <section class="container_menu">
-            <div class="menu_nav">
+            <div class="menu_nav" data-section="Home">
                 <img src="/storage/img/Home_menu_nav.svg" alt="">
                 <button onclick="changeContent('Home')">Home</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Course_Menu.png" alt="">
-                <button onclick="changeContent('Course')">Course</button>
+                <button onclick="changeContent('Course')" data-section="Home">Course</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Students_Menu.png" alt="">
-                <button onclick="changeContent('Students')">Students</button>
+                <button onclick="changeContent('Students')" data-section="Home">Students</button>
             </div>
             <div class="menu_nav">
                <img src="/storage/img/Payment_Menu.png" alt="">
-                <button onclick="changeContent('Payment')">Payment</button>
+                <button onclick="changeContent('Payment')" data-section="Home">Payment</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Report_Menu.png" alt="">
-                <button onclick="changeContent('Report_menu_nav')">Report</button>
+                <button onclick="changeContent('Report_menu_nav')" data-section="Home">Report</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Settings_Menu.png" alt="">
-                <button onclick="changeContent('Settings')">Settings</button>
+                <button onclick="changeContent('Settings')" data-section="Home">Settings</button>
             </div>
-            <div class="log_out">
-                <button onclick="changeContent('Logout')">Logout</button>
+            <div class="log_out menu_nav">
+                <button onclick="window.location.replace('../index.html')">Logout</button>
                 <img src="/storage/img/Sign_Out_Menu.png" alt="">
             </div>
         </section>

@@ -31,6 +31,10 @@ body{
 .return {
     margin: 21px 0 21px 30px;
 }
+.return img{
+    width: 18px;
+    height: 18px;
+}
 .container_options {
     display: flex;
     margin: 20px 51px 20px 0;
@@ -41,7 +45,7 @@ body{
     width: 212px;
     height: 37px;
     display: flex;
-    border: 2px solid #C4C4C4;
+    border: 1px solid var(--color-7);
     border-radius: 10px;
     align-items: center;
     padding: 10px;
@@ -56,7 +60,9 @@ body{
     width: 14px;
     height: 14px;
 }
-.noti {
+.noti img{
+    width: 17px;
+    height: 20px;
 }
 
 
@@ -139,6 +145,7 @@ nav {
     align-items: center; 
     height: 41px;
     padding: 0 40px;
+    border-radius: 4px;
 }
 
 .menu_nav img {
@@ -182,6 +189,9 @@ nav {
     height: 14px;
 }
 
+.menu_nav.active {
+    background-color: var(--color-2);
+}
 
 
 
@@ -206,6 +216,7 @@ main{
      flex-direction: column;
      justify-content: space-between;
      align-items: flex-end;
+     border-radius: 8px;
  }
  #students{
     background: var(--color-14);
