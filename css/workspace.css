@@ -8,8 +8,10 @@
 }
 
 body{
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 60px auto;
     grid-template-areas: "nav header header header header header header header header header header header header"
                          "nav main main main main main main main main main main main main";
 }
@@ -20,7 +22,7 @@ body{
 /*-----------------------------HEADER------------------------------------*/
 .header{
     grid-area: header;
-    width: 1170px;
+    width: auto;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -32,9 +34,27 @@ body{
 .container_options {
     display: flex;
     margin: 20px 51px 20px 0;
-    gap: 27px;
+    align-items: center;
+    gap: 10%;
 }
 .search {
+    width: 212px;
+    height: 37px;
+    display: flex;
+    border: 2px solid #C4C4C4;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+.search input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+.search img{
+    width: 14px;
+    height: 14px;
 }
 .noti {
 }
@@ -49,8 +69,8 @@ body{
 }
 
 nav {
-    width: 290px;
-    height: 900px;
+    width: 20vw;
+    height: 1600%;
     background-color: var(--color-10);
     display: flex;
     flex-direction: column;
@@ -105,15 +125,61 @@ nav {
 }
 .container_menu {
     height: auto;
-    background: red;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 22px;
+    margin-top: 20%;
 }
+
+
 .menu_nav {
-    background: green;
+    /* background: red; */
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    height: 41px;
+    padding: 0 40px;
 }
+
+.menu_nav img {
+    width: 14px;
+    height: 14px;
+}
+
+.menu_nav button {
+    background: transparent;
+    flex-grow: 1;
+    text-align: left;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
 .log_out {
+    margin-top: 87%;
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 41px;
+    padding: 0 10px;
+}
+.log_out button{
+    background: transparent;
+    flex-grow: 0.5;
+    text-align: center;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    cursor: pointer;
+}
+.log_out img{
+    width: 14px;
+    height: 14px;
 }
 
 
