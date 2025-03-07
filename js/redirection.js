@@ -99,6 +99,7 @@ export const changeContent = (seccion) => {
     } else if (seccion === "Settings") {
         main.innerHTML = "<h2>Página de Settings</h2>";
     }
+    
 };
 
 document.addEventListener("DOMContentLoaded", () => {

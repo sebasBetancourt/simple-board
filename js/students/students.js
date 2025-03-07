@@ -1,10 +1,5 @@
 import {save,edit, transformInputFormulary, loadStudent, showRowsTable} from "./formStudent.js";
 
- window.changeContent = changeContent;
-
- document.addEventListener("DOMContentLoaded", () => { 
-     changeContent("Home");
- });
 
 const add__student = document.querySelector("#add__student");
 const dialog__add_student = document.querySelector("#dialog__add_student");
