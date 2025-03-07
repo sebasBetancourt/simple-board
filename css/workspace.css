@@ -1,0 +1,279 @@
+@import url(variable.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 60px auto;
+    grid-template-areas: "nav header header header header header header header header header header header header"
+                         "nav main main main main main main main main main main main main";
+}
+
+
+
+
+/*-----------------------------HEADER------------------------------------*/
+.header{
+    grid-area: header;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return {
+    margin: 21px 0 21px 30px;
+}
+.return img{
+    width: 18px;
+    height: 18px;
+}
+.container_options {
+    display: flex;
+    margin: 20px 51px 20px 0;
+    align-items: center;
+    gap: 10%;
+}
+.search {
+    width: 212px;
+    height: 37px;
+    display: flex;
+    border: 1px solid var(--color-7);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+.search input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+.search img{
+    width: 14px;
+    height: 14px;
+}
+.noti img{
+    width: 17px;
+    height: 20px;
+}
+
+
+/*-----------------------------NAVEGATION------------------------------------*/
+
+.main_container {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 20vw;
+    height: 1600%;
+    background-color: var(--color-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.container_logo {
+    width: 219.5px;
+    height: 24px;
+    margin-top: 18px;
+
+}
+
+.container_logo a {
+    display: flex; 
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.container_logo a h1{
+    font-family: "Montserrat-Bold";
+    font-size: 20px;
+    color: var(--color-1);
+}
+
+
+.container_user {
+    width: 130px;
+    height: 196px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.container_user img{
+    width: 130px;
+    height: 214px;
+    border-radius: 100%;
+}
+.container_user h2{
+    font-family: "Montserrat-Bold";
+    font-size: 17px;
+    color: var(--color-1);
+}
+.container_user label{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.container_menu {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20%;
+}
+
+
+.menu_nav {
+    /* background: red; */
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    height: 41px;
+    padding: 0 40px;
+    border-radius: 4px;
+}
+
+.menu_nav img {
+    width: 14px;
+    height: 14px;
+}
+
+.menu_nav button {
+    background: transparent;
+    flex-grow: 1;
+    text-align: left;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+.log_out {
+    margin-top: 87%;
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 41px;
+    padding: 0 10px;
+}
+.log_out button{
+    background: transparent;
+    flex-grow: 0.5;
+    text-align: center;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    cursor: pointer;
+}
+.log_out img{
+    width: 14px;
+    height: 14px;
+}
+
+.menu_nav.active {
+    background-color: var(--color-2);
+}
+
+
+
+
+
+/*-----------------------------MAIN_CONTENT-----------------------------------*/
+
+
+main{
+    margin-top: 30px;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .div__container {
+    width: 90%;
+    margin: auto;
+}
+.div__header{
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.div__header h2 {
+    font-size: 24px;
+}
+.button__add {
+    background-color: #ededed;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button__add:hover {
+    background-color: #747474;
+}
+#dialog__add_student,
+#dialog__student_edit{
+    margin: auto;
+}
+.dialog__header{
+    display: flex;
+    justify-content: flex-end;
+}
+.dialog__header > span{
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:#000;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.td__actions {
+    display: flex;
+    gap: 10px;
+}
+.span__edit, .span__delete {
+    cursor: pointer;
+}
+.span__edit {
+    color: #f4a261;
+}
+.span__delete {
+    color: #e63946;
+}
