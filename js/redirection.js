@@ -91,8 +91,7 @@ export const changeContent = (seccion) => {
                     
                 </tbody>
             </table>
-        </div>
-    </main>`;
+        </div>`;
     } else if (seccion === "Payment") {
         main.innerHTML = "<h2>Página de Payment</h2>";
     } else if (seccion === "Report_menu_nav") {

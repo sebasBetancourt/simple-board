@@ -1,11 +1,10 @@
-import { changeContent } from "../redirection.js"; 
 import {save,edit, transformInputFormulary, loadStudent, showRowsTable} from "./formStudent.js";
 
-window.changeContent = changeContent;
+ window.changeContent = changeContent;
 
-document.addEventListener("DOMContentLoaded", () => { 
-    changeContent("Home");
-});
+ document.addEventListener("DOMContentLoaded", () => { 
+     changeContent("Home");
+ });
 
 const add__student = document.querySelector("#add__student");
 const dialog__add_student = document.querySelector("#dialog__add_student");
@@ -45,3 +44,7 @@ form__student_edit.addEventListener("submit", (e)=>{
     form__student_edit.reset();
     
 })
+
+showRowsTable (DB)
+showRowsTable = (loadStudent())
+showRowsTable (loadStudent())

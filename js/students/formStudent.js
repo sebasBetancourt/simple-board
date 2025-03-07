@@ -1,15 +1,28 @@
 import {enableFromStudent} from "./handler.js";
 
-export const loadStudent = ()=>{
-    const DB = (localStorage.getItem("students")) ? JSON.parse(localStorage.getItem("students")) : [];
-    return DB;
+export const loadStudent = () => {
+    const sampleData = [
+        {"name":"Miguel Angel","email":"m@gmail.com","phone":150,"enroll_number":34567890,"date_of_admission":"2025-03-07T13:28:53.890Z"},
+        {"name":"Migu","email":"ma@gmail.com","phone":123456789,"enroll_number":34567890,"date_of_admission":"2025-03-07T13:15:06.497Z"},
+        {"name":"Miguel Angel","email":"ma@gmail.com","phone":123456789,"enroll_number":34567890,"date_of_admission":"2025-03-07T13:11:11.872Z"},
+        {"name":"Miguel Angel","email":"ma@gmail.com","phone":123456789,"enroll_number":34567890,"date_of_admission":"2025-03-07T13:14:58.506Z"},
+        {"name":"sevs","email":"ma@gmail.com","phone":9798789,"enroll_number":34567890,"date_of_admission":"2025-03-07T13:28:43.609Z"}
+    ];
+
+    // si no existe la clave students, inicializa con los datos de muestra
+    if (!localStorage.getItem("students")) {
+        localStorage.setItem("students", JSON.stringify(sampleData));
+    }
+
+    // retorna lo que hay en el localstorage (ya sea el sample o lo que se haya agregado)
+    return JSON.parse(localStorage.getItem("students"));
 }
 export const save = (data)=>{
     const DB = loadStudent();
     DB.push(data);
     showRowsTable([data]);
     localStorage.setItem("students", JSON.stringify(DB));
-    return {status: 201, message: `El estudiante ${data.name} fue registrado exitosamente.`}
+    return {status: 200, message: `El estudiante ${data.name} fue registrado exitosamente.`}
 }
 export const edit = (data)=>{
     const DB = loadStudent(); // [{name: "Miguel"},{name "Juan"}]
