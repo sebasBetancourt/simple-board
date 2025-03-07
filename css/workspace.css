@@ -207,13 +207,42 @@ main{
      justify-content: space-between;
      align-items: flex-end;
  }
+ #students{
+    background: var(--color-14);
+ }
+ #course{
+    background: var(--color-17);
+ }
+ #payment{
+    background: var(--color-18);
+ }
+ #user{
+    background: var(--color-19);
+ }
  .div__container div{
-     background: #b9b9b9;
+     /* background: #b9b9b9; */
      width: 100%;
+     height: 58%;
      display: flex;
      flex-direction: column;
+     padding: 20px;
+     gap: 15px;
  }
- 
+ .div__container div span{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-6);
+ }
+ .div__container img{
+    width: 48px;
+    height: 38px;
+ }
+ .div__container strong{
+    margin: 20px;
+    font-family: "Montserrat-Bold";
+    font-size: 25px;
+ }
+
  #payment > strong{
      position: relative;
  }

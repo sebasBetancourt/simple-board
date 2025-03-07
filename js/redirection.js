@@ -5,28 +5,28 @@ export const changeContent = (seccion) => {
         main.innerHTML = `
             <div id="students" class="div__container">
                 <div>
-                    <img src="#">
+                    <img src="/storage/img/Student_Dashboard.svg">
                     <span>Students</span>
                 </div>
                 <strong>243</strong>
             </div>
             <div id="course" class="div__container">
                 <div>
-                    <img src="#">
+                    <img src="/storage/img/Course_Dashboard.svg">
                     <span>Course</span>
                 </div>
                 <strong>13</strong>
             </div>
             <div id="payment" class="div__container">
                 <div>
-                    <img src="#">
+                    <img src="/storage/img/Payment_DashBoard.svg">
                     <span>Payments</span>
                 </div>
                 <strong data-format="$">556,000</strong>
             </div>
             <div id="user" class="div__container">
                 <div>
-                    <img src="#">
+                    <img src="/storage/img/Users_Dashboard.svg">
                     <span>Users</span>
                 </div>
                 <strong>3</strong>
