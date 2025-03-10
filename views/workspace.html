@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/workspace.css">
-    
     <script src="../js/students/students.js" defer type="module"></script>
     <title>Document</title>
 </head>
@@ -40,29 +39,29 @@
             <label>Admin</label>
         </section>
         <section class="container_menu">
-            <div class="menu_nav" data-section="Home">
+            <div class="menu_nav">
                 <img src="/storage/img/Home_menu_nav.svg" alt="">
-                <button onclick="changeContent('Home')">Home</button>
+                <button onclick="changeContent('Home')" data-section="Home">Home</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Course_Menu.png" alt="">
-                <button onclick="changeContent('Course')" data-section="Home">Course</button>
+                <button onclick="changeContent('Course')" data-section="Course">Course</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Students_Menu.png" alt="">
-                <button onclick="changeContent('Students')" data-section="Home">Students</button>
+                <button onclick="changeContent('Students')" data-section="Students">Students</button>
             </div>
             <div class="menu_nav">
                <img src="/storage/img/Payment_Menu.png" alt="">
-                <button onclick="changeContent('Payment')" data-section="Home">Payment</button>
+                <button onclick="changeContent('Payment')" data-section="Payment">Payment</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Report_Menu.png" alt="">
-                <button onclick="changeContent('Report_menu_nav')" data-section="Home">Report</button>
+                <button onclick="changeContent('Report_menu_nav')" data-section="Report_menu_nav">Report</button>
             </div>
             <div class="menu_nav">
                 <img src="/storage/img/Settings_Menu.png" alt="">
-                <button onclick="changeContent('Settings')" data-section="Home">Settings</button>
+                <button onclick="changeContent('Settings')" data-section="Settings">Settings</button>
             </div>
             <div class="log_out menu_nav">
                 <button onclick="window.location.replace('../index.html')">Logout</button>
@@ -72,92 +71,7 @@
     </nav>
 
     <main id="content">
-        <div class="div__container">
-            <div class="div__header">
-                <h2>Students List</h2>
-                <button id="add__student" class="button__add">ADD NEW STUDENT</button>
-            </div>
-            <dialog id="dialog__add_student">
-                <div class="dialog__header">
-                    <span id="dialog__close">x</span>
-                </div>
-                <div class="dialog__main">
-                    <form id="form__student" action="?" method="post">
-                        <div>
-                            <label>Name</label>
-                            <input type="text" value="Miguel Angel" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+" name="name">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" value="ma@gmail.com" name="email">
-                        </div>
-                        <div>
-                            <label>Phone</label>
-                            <input type="text" value="123456789" pattern="[0-9]+" max="10" name="phone">
-                        </div>
-                        <div>
-                            <label>Enroll Number</label>
-                            <input type="number" value="34567890" name="enroll_number">
-                        </div>
-                    </form>
-                </div>
-                <div class="dialog__footer">
-                    <input type="submit" form="form__student" value="Guardar">
-                </div>
-            </dialog>
-            <dialog id="dialog__student_edit">
-                <div class="dialog__header">
-                    <span id="dialog__close_edit">x</span>
-                </div>
-                <div class="dialog__main">
-                    <form id="form__student_edit" action="?" method="post">
-                        <div hidden>
-                            <label>Id</label>
-                            <input type="number" pattern="[0-9]+" name="id" >
-                        </div>
-                        <div>
-                            <label>Name</label>
-                            <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+" name="name">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" name="email">
-                        </div>
-                        <div>
-                            <label>Phone</label>
-                            <input type="text" pattern="[0-9]+" max="10" name="phone">
-                        </div>
-                        <div>
-                            <label>Enroll Number</label>
-                            <input type="number" name="enroll_number">
-                        </div>
-                        <!-- <div>
-                            <label>Date of Admission</label>
-                            <input type="date" name="date_of_admission">
-                        </div> -->
-                    </form>
-                </div>
-                <div class="dialog__footer">
-                    <input type="submit" form="form__student_edit" value="Actualizar">
-                </div>
-            </dialog>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Photo</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Enroll Number</th>
-                        <th>Date of Admission</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="table__student">
-                    
-                </tbody>
-            </table>
-        </div>
+        
     </main>
 </body>
 </html>
