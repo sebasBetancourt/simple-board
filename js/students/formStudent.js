@@ -36,7 +36,7 @@ export const showRowsTable = (DB)=>{
         const tr = document.createElement("tr")
         const tdImage = document.createElement("td");
         const imgStudent = document. createElement("img");
-        imgStudent.src = "#"
+        imgStudent.src = "../storage/img/profile.svg";
         imgStudent.alt = "student";
         tdImage.append(imgStudent);
         const tdName = document.createElement("td");

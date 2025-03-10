@@ -201,7 +201,6 @@ nav {
 
 
 main{
-    margin-top: 30px;
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
@@ -209,19 +208,25 @@ main{
  }
  .div__container {
     width: 90%;
-    margin: auto;
+    background-color: #f9f9f9;
 }
 .div__header{
-    background-color: #f9f9f9;
+    
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
 }
 .div__header h2 {
-    font-size: 24px;
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+}
+.div__add {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 .button__add {
-    background-color: #ededed;
+    background-color: var(--color-2);
     padding: 10px 15px;
     border: none;
     cursor: pointer;

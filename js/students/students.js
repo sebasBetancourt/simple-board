@@ -13,15 +13,19 @@ window.changeContent = (seccion) => {
     }, 100);
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        changeContent("Home");
-    }, 500);
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            changeContent("Home");
+        }, 500);
 
     document.querySelectorAll(".menu_nav").forEach(button => {
         button.addEventListener("click", (e) => {
-            const seccion = e.target.dataset.section;
-            changeContent(seccion);
+            const seccion = e.target.dataset.section || e.target.closest(".menu_nav")?.dataset.section;
+            if (seccion) {
+                changeContent(seccion);
+            } else {
+                console.error("Error: No se encontró data-section.");
+            }
         });
     });
 });
@@ -78,6 +82,9 @@ document.addEventListener("click", (event) => {
         }
     }
 });
+
+
+
 
 document.addEventListener("submit", (e) => {
     if (e.target.id === "form__student" || e.target.id === "form__student_edit") {

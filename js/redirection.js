@@ -9,7 +9,10 @@ export const changeContent = (seccion) => {
         main.innerHTML = `<div class="div__container">
             <div class="div__header">
                 <h2>Students List</h2>
-                <button id="add__student" class="button__add">ADD NEW STUDENT</button>
+                <div class="div__add">
+                    <a href="#"><img src="../storage/img/sort 1.svg" alt="student"></a>
+                    <button id="add__student" class="button__add">ADD NEW STUDENT</button>
+                </div>
             </div>
             <dialog id="dialog__add_student">
                 <div class="dialog__header">
@@ -44,7 +47,7 @@ export const changeContent = (seccion) => {
                     <span id="dialog__close_edit">x</span>
                 </div>
                 <div class="dialog__main">
-                    <form id="form__student_edit" action="?" method="post">
+                    <form id="form__student_edit" method="post">
                         <div hidden>
                             <label>Id</label>
                             <input type="number" pattern="[0-9]+" name="id" >
@@ -99,6 +102,7 @@ export const changeContent = (seccion) => {
     } else if (seccion === "Settings") {
         main.innerHTML = "<h2>Página de Settings</h2>";
     }
+
 };
 
 document.addEventListener("DOMContentLoaded", () => {
