@@ -17,6 +17,8 @@
     --color-16 : #FDFDFD;
     --color-17 : #FEF6FB;
     --color-18 : #FEFBEC;
+    --color-19 : linear-gradient(180deg, #FEAF00 0%, #F8D442 100%);
+    ;
 }
 
 

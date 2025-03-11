@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/workspace.css">
+    <script src="../js/dashbord/dashboard.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="return">
+            <a href="#">
+                <img src="/storage/img/Arrow.png">
+            </a>
+        </div>
+        <div class="container_options">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <img src="/storage/img/search 1.svg" alt="">
+            </div>
+            <div class="noti">
+                <a href="#">
+                    <img src="/storage/img/Notification.png">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container_logo">
+            <a href="#">
+                <img src="/storage/img/Line_Logo.png" alt="">
+                <h1>CRUD OPERATIONS</h1>
+            </a>
+        </div>
+        <section class="container_user">
+            <img src="/storage/img/Profile_Img.png" alt="">
+            <h2>Karthi Madesh</h2>
+            <label>Admin</label>
+        </section>
+        <section class="container_menu">
+            <div class="menu_nav" data-section="Home">
+                <img src="/storage/img/Home_menu_nav.svg" alt="">
+                <button onclick="changeContent('Home')">Home</button>
+            </div>
+            <div class="menu_nav">
+                <img src="/storage/img/Course_Menu.png" alt="">
+                <button onclick="changeContent('Course')" data-section="Home">Course</button>
+            </div>
+            <div class="menu_nav">
+                <img src="/storage/img/Students_Menu.png" alt="">
+                <button onclick="changeContent('Students')" data-section="Home">Students</button>
+            </div>
+            <div class="menu_nav">
+               <img src="/storage/img/Payment_Menu.png" alt="">
+                <button onclick="changeContent('Payment')" data-section="Home">Payment</button>
+            </div>
+            <div class="menu_nav">
+                <img src="/storage/img/Report_Menu.png" alt="">
+                <button onclick="changeContent('Report_menu_nav')" data-section="Home">Report</button>
+            </div>
+            <div class="menu_nav">
+                <img src="/storage/img/Settings_Menu.png" alt="">
+                <button onclick="changeContent('Settings')" data-section="Home">Settings</button>
+            </div>
+            <div class="log_out menu_nav">
+                <button onclick="window.location.replace('../index.html')">Logout</button>
+                <img src="/storage/img/Sign_Out_Menu.png" alt="">
+            </div>
+        </section>
+    </nav>
+
+    <main id="content">
+HOLAS
+    </main>
+</body>
+</html>

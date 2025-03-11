@@ -1,0 +1,262 @@
+@import url(variable.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 60px auto;
+    grid-template-areas: "nav header header header header header header header header header header header header"
+                         "nav main main main main main main main main main main main main";
+}
+
+
+
+
+/*-----------------------------HEADER------------------------------------*/
+.header{
+    grid-area: header;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return {
+    margin: 21px 0 21px 30px;
+}
+.return img{
+    width: 18px;
+    height: 18px;
+}
+.container_options {
+    display: flex;
+    margin: 20px 51px 20px 0;
+    align-items: center;
+    gap: 10%;
+}
+.search {
+    width: 212px;
+    height: 37px;
+    display: flex;
+    border: 1px solid var(--color-7);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+.search input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+.search img{
+    width: 14px;
+    height: 14px;
+}
+.noti img{
+    width: 17px;
+    height: 20px;
+}
+
+
+/*-----------------------------NAVEGATION------------------------------------*/
+
+.main_container {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 20vw;
+    height: 1600%;
+    background-color: var(--color-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.container_logo {
+    width: 219.5px;
+    height: 24px;
+    margin-top: 18px;
+
+}
+
+.container_logo a {
+    display: flex; 
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.container_logo a h1{
+    font-family: "Montserrat-Bold";
+    font-size: 20px;
+    color: var(--color-1);
+}
+
+
+.container_user {
+    width: 130px;
+    height: 196px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.container_user img{
+    width: 130px;
+    height: 214px;
+    border-radius: 100%;
+}
+.container_user h2{
+    font-family: "Montserrat-Bold";
+    font-size: 17px;
+    color: var(--color-1);
+}
+.container_user label{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.container_menu {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20%;
+}
+
+
+.menu_nav {
+    /* background: red; */
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    height: 41px;
+    padding: 0 40px;
+    border-radius: 4px;
+}
+
+.menu_nav img {
+    width: 14px;
+    height: 14px;
+}
+
+.menu_nav button {
+    background: transparent;
+    flex-grow: 1;
+    text-align: left;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+.log_out {
+    margin-top: 87%;
+    width: 193px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 41px;
+    padding: 0 10px;
+}
+.log_out button{
+    background: transparent;
+    flex-grow: 0.5;
+    text-align: center;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    height: 100%;
+    cursor: pointer;
+}
+.log_out img{
+    width: 14px;
+    height: 14px;
+}
+
+.menu_nav.active {
+    background-color: var(--color-2);
+}
+
+
+
+
+
+/*-----------------------------MAIN_CONTENT-----------------------------------*/
+
+
+main{
+    margin-top: 30px;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+ }
+ .div__container{
+     width: 255px;
+     height: 157px;
+     background: #eee;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-end;
+     border-radius: 8px;
+ }
+ #students{
+    background: var(--color-14);
+ }
+ #course{
+    background: var(--color-17);
+ }
+ #payment{
+    background: var(--color-18);
+ }
+ #user{
+    background: var(--color-19);
+ }
+ .div__container div{
+     /* background: #b9b9b9; */
+     width: 100%;
+     height: 58%;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     gap: 15px;
+ }
+ .div__container div span{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-6);
+ }
+ .div__container img{
+    width: 48px;
+    height: 38px;
+ }
+ .div__container strong{
+    margin: 20px;
+    font-family: "Montserrat-Bold";
+    font-size: 25px;
+ }
+
+ #payment > strong{
+     position: relative;
+ }
+ #payment > strong::before{
+     content: attr(data-format);
+ }
