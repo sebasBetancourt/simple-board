@@ -76,7 +76,7 @@ body{
 
 nav {
     width: 20vw;
-    height: 1600%;
+    height: 120vh;
     background-color: var(--color-10);
     display: flex;
     flex-direction: column;
@@ -205,16 +205,18 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #f9f9f9;
+    height: 112vh;
+    overflow: scroll;
  }
  .div__container {
-    width: 90%;
-    background-color: #f9f9f9;
+    width: 95%;
 }
 .div__header{
-    
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .div__header h2 {
     font-family: "Montserrat-Bold";
@@ -226,11 +228,16 @@ main{
     align-items: center;
 }
 .button__add {
+    width: 199px;
+    height: 44px;
     background-color: var(--color-2);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    color: var(--color-3);
 }
 .button__add:hover {
     background-color: #747474;
@@ -244,25 +251,60 @@ main{
     justify-content: flex-end;
 }
 .dialog__header > span{
+    width: 25px;
+    text-align: center;
     cursor: pointer;
     padding: 5px;
     border: 1px solid #000;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background: rgba(235, 43, 43, 0.884);
 }
+#dialog__add_student{
+    width: 400px;
+    height: 200px;
+}
+.dialog__header {
+}
+.dialog__main {
+}
+.dialog__footer {
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color:#000;
+    border-top-color: var(--color-7);
+}
+thead tr th{
+    font-family: "Montserrat-SemiBold";
+    font-size: 12px;
+    color: var(--color-5);
+    text-align: center;
+}
+
+#table__student{
+    background: var(--color-3);
 }
 th, td {
-    border-bottom: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
+
 th {
     background-color: #f9f9f9;
     font-weight: bold;
+}
+
+
+tr td{
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: var(--color-1);
+    font-weight:500;
 }
 
 .td__actions {
@@ -270,6 +312,7 @@ th {
     gap: 10px;
 }
 .span__edit, .span__delete {
+    margin-left: 10px;
     cursor: pointer;
 }
 .span__edit {

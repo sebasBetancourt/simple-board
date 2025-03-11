@@ -47,7 +47,7 @@ export const changeContent = (seccion) => {
                     <span id="dialog__close_edit">x</span>
                 </div>
                 <div class="dialog__main">
-                    <form id="form__student_edit" method="post">
+                    <form id="form__student_edit" method="get">
                         <div hidden>
                             <label>Id</label>
                             <input type="number" pattern="[0-9]+" name="id" >
